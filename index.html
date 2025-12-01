@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria Clean</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">Pincel<span>&</span>Parede</div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Quadros</a></li>
+                <li><a href="#">Coleções</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Arte que transforma ambientes</h1>
+            <p>Quadros minimalistas, modernos e exclusivos.</p>
+            <a href="#" class="btn">Ver Coleção</a>
+        </div>
+    </section>
+
+    <!-- Galeria -->
+    <section class="gallery-section">
+        <h2>Nossos Quadros</h2>
+
+        <div class="gallery">
+            <div class="card">
+                <img src="abstrato.jpg" alt="">
+                <h3>Abstrato Minimalista</h3>
+                <p>R$ 249,90</p>
+            </div>
+
+            <div class="card">
+                <img src="geometrico.jpg" alt="">
+                <h3>Formas Geométricas</h3>
+                <p>R$ 199,90</p>
+            </div>
+
+            <div class="card">
+                <img src="paisagem.jpeg" alt="">
+                <h3>Paisagem Suave</h3>
+                <p>R$ 289,90</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE A LOJA -->
+    <section class="sobre-section">
+        <div class="sobre-container">
+            <div class="sobre-texto">
+                <h2>Sobre a<br><span>Pincel & Parede</span></h2>
+                <p>
+                    Criamos quadros que unem estilo, minimalismo e personalidade.  
+                    Nossa missão é transformar paredes em espaços cheios de vida 
+                    O que você imaginar nós tornamos real em sua parede, com qualidade 
+                    de alto nível e preços acessíveis. Cada peça é selecionada com cuidado 
+                    para trazer beleza e harmonia ao seu lar.
+                </p>
+            </div>
+            <div class="sobre-img">
+            
+            </div>
+        </div>
+    </section>
+
+<!-- COMO FUNCIONA -->
+<section class="funciona-section fade-in-section">
+        <h2 class="fade-in-element">Como Funciona</h2> 
+        <p class="fade-in-element">
+            Você escolherá uma imagem de inspiração para que nossos 
+            artistas possam criar a obra prima com base no seu gosto.
+            Basta enviar um pedido no whatsapp que te daremos toda a atenção
+            necessária!
+        </p>
+</section>
+
+<!--Efeito animação do scroll-->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const elements = document.querySelectorAll(".fade-in-element, .fade-in-section");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+            }
+        });
+    }, {
+        threshold: 0.2  // 20% do elemento precisa aparecer
+    });
+
+    elements.forEach(el => observer.observe(el));
+});
+</script>
+
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <p>© 2025 Pincel&Parede — Todos os direitos reservados</p>
+    </footer>
+
+</body>
+</html>
