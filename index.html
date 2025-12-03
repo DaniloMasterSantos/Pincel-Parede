@@ -74,41 +74,52 @@
         </div>
     </section>
 
-<!-- COMO FUNCIONA -->
-<section class="funciona-section fade-in-section">
-        <h2 class="fade-in-element">Como Funciona</h2> 
-        <p class="fade-in-element">
-            Você escolherá uma imagem de inspiração para que nossos 
-            artistas possam criar a obra prima com base no seu gosto.
-            Basta enviar um pedido no whatsapp que te daremos toda a atenção
-            necessária!
-        </p>
-</section>
-
-<!--Efeito animação do scroll-->
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-    const elements = document.querySelectorAll(".fade-in-element, .fade-in-section");
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("visible");
-            }
-        });
-    }, {
-        threshold: 0.2  // 20% do elemento precisa aparecer
-    });
-
-    elements.forEach(el => observer.observe(el));
-});
-</script>
+    <!-- COMO FUNCIONA -->
+    <section class="funciona-section fade-in-section">
+        <h2 class="fade-in-element">O que Pedir?</h2>
+        <div class="funciona-box"> 
+            <div class="funciona-card">
+                <div class="funciona-img"></div>
+                <h3>Quadros</h3>
+                <p>Pinturas para decorar sua parede e dar vida à sua casa</p>
+            </div>
+            <div class="funciona-card">
+                <div class="funciona-img"></div>
+                <h3>Pintura de Rosto</h3>
+                <p>Máquiagem para teatro, festas, fantasias e muito mais</p>
+            </div>
+            <div class="funciona-card">
+                <div class="funciona-img"></div>
+                <h3>Artesanato</h3>
+                <p>Decorações de alto nível para o seu lar</p>
+            </div>
+        </div>
+    </section>
 
 
     <!-- Rodapé -->
     <footer class="footer">
         <p>© 2025 Pincel&Parede — Todos os direitos reservados</p>
     </footer>
+
+    <!--Efeito animação do scroll-->
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const elements = document.querySelectorAll(".fade-in-element, .fade-in-section");
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                }
+            });
+        }, {
+            threshold: 0.2  // 20% do elemento precisa aparecer
+        });
+
+        elements.forEach(el => observer.observe(el));
+    });
+    </script>
 
 </body>
 </html>
