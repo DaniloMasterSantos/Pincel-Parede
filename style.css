@@ -223,12 +223,10 @@ body {
 .funciona-section {
     margin-top: 0%;
     text-align: center;
-    max-height: 700px;
+    min-height: 700px;
     padding: 4% 8% 4% 8%;
-    background-color:#f2f4f8;
     width:100%;
-    background-image: url("tinta.jpg");
-    background-size:cover;
+    background-color:#e7e8ec;
 }
 
 .funciona-box{
@@ -236,6 +234,7 @@ body {
     align-items: center;
     justify-content:space-around;
     flex-direction:row;
+    flex-wrap: wrap;
 }
 
 .funciona-section h2 {
@@ -268,6 +267,7 @@ body {
     flex-direction: column;
     color: rgb(221, 213, 213);
     border-radius: 5px;
+    margin: 20px 10px;
 }
 
 .funciona-img{
