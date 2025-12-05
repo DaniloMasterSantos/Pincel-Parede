@@ -11,6 +11,12 @@
     <!-- Header -->
     <header class="header">
         <div class="logo">Pincel<span>&</span>Parede</div>
+
+        <!-- Ícone hamburger -->
+        <div class="hamburger" onclick="toggleMenu()">
+            ☰
+        </div>
+
         <nav>
             <ul class="menu">
                 <li><a href="#">Início</a></li>
@@ -20,6 +26,15 @@
             </ul>
         </nav>
     </header>
+
+    <script>
+    function toggleMenu() {
+        document.querySelector('nav').classList.toggle('active');
+        document.querySelector('.menu').classList.toggle('active');
+    }
+    </script>
+
+
 
     <!-- Hero -->
     <section class="hero">
@@ -74,7 +89,7 @@
         </div>
     </section>
 
-    <!-- COMO FUNCIONA -->
+    <!-- COMO FUNCIONA (Virou -> O que Pedir) -->
     <section class="funciona-section fade-in-section">
         <h2 class="fade-in-element">O que Pedir?</h2>
         <div class="funciona-box"> 
@@ -85,7 +100,7 @@
             </div>
             <div class="funciona-card">
                 <div class="funciona-img"></div>
-                <h3>Pintura de Rosto</h3>
+                <h3>Maquiagem</h3>
                 <p>Máquiagem para teatro, festas, fantasias e muito mais</p>
             </div>
             <div class="funciona-card">
@@ -95,8 +110,18 @@
             </div>
             <div class="funciona-card">
                 <div class="funciona-img"></div>
-                <h3>Artes em Paredes</h3>
+                <h3>Paredes</h3>
                 <p>Dê cor a sua casa da maneira mais criativa possível</p>
+            </div>
+            <div class="funciona-card">
+                <div class="funciona-img"></div>
+                <h3>Criativo</h3>
+                <p>Pinturas de objetos memoráveis para você</p>
+            </div>
+            <div class="funciona-card">
+                <div class="funciona-img"></div>
+                <h3>Marcador</h3>
+                <p>Marca páginas especiais para suas histórias</p>
             </div>
         </div>
     </section>
