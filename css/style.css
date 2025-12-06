@@ -113,7 +113,7 @@ body {
 =========================== */
 .hero {
     height: 75vh;
-    background-image: url("quadro.jpg");
+    background-image: url("../img/quadro.jpg");
     background-size:cover;
     align-items: center;
     justify-content: flex-start;
@@ -247,7 +247,7 @@ body {
 }
 
 .sobre-img{
-    background-image: url("rabisco.jpeg");
+    background-image: url("../img/rabisco.jpeg");
     background-size: cover;
     width: 60%;
     min-height: 600px;
@@ -358,27 +358,27 @@ body {
 }
 
 .img1{
-    background-image: url(quadro2.jpg)
+    background-image: url(../img/quadro2.jpg)
 }
 
 .img2{
-    background-image: url(maquiagem.png)
+    background-image: url(../img/maquiagem.png)
 }
 
 .img3{
-    background-image: url(artesanato.jpg)
+    background-image: url(../img/artesanato.jpg)
 }
 
 .img4{
-    background-image: url(paredes.jpeg)
+    background-image: url(../img/paredes.jpeg)
 }
 
 .img5{
-    background-image: url(criativo.jpg)
+    background-image: url(../img/criativo.jpg)
 }
 
 .img6{
-    background-image: url(marcador.jpg)
+    background-image: url(../img/marcador.jpg)
 }
 
 .funciona-img:hover{
