@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pincel&Parede</title>
+    <link rel="stylesheet" href="css/style _quadros.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">Pincel<span>&</span>Parede</div>
+
+        <!-- Ícone hamburger -->
+        <div class="hamburger" onclick="toggleMenu()">
+            ☰
+        </div>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="quadros.html">Quadros</a></li>
+                <li><a href="#">Coleções</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+    function toggleMenu() {
+        document.querySelector('nav').classList.toggle('active');
+        document.querySelector('.menu').classList.toggle('active');
+    }
+    </script>
+
+
+
+    <!-- Hero -->
+    <section class="hero fade-in-section">
+        <div class="hero-content fade-in-element">
+            <h1>Todos os modelos de quadros</h1>
+            <p>Se inspire e peça o seu quadro no modelo certo</p>
+            <a href="#" class="btn">Fazer Pedido</a>
+        </div>
+    </section>
+
+
+    <!-- COMO FUNCIONA (Virou -> O que Pedir) -->
+    <section class="funciona-section fade-in-section">
+        <h2 class="fade-in-element">Quadros de Porta</h2>
+        <div class="funciona-box"> 
+            <div class="funciona-card">
+                <div class="funciona-img img1"></div>
+                <h3>Nome Quadro:</h3>
+                <p>Medidas:<br>Preço: </p>
+            </div>
+            <div class="funciona-card">
+                <div class="funciona-img img2"></div>
+                <h3>Nome Quadro:</h3>
+                <p>Medidas:<br>Preço: </p>
+            </div>
+            <div class="funciona-card">
+                <div class="funciona-img img3"></div>
+                <h3>Nome Quadro:</h3>
+                <p>Medidas:<br>Preço: </p>
+            </div>
+            <div class="funciona-card">
+                <div class="funciona-img img4"></div>
+                <h3>Nome Quadro:</h3>
+                <p>Medidas:<br>Preço: </p>
+            </div>
+            <div class="funciona-card">
+                <div class="funciona-img img5"></div>
+                <h3>Nome Quadro:</h3>
+                <p>Medidas:<br>Preço: </p>
+            </div>
+            <div class="funciona-card">
+                <div class="funciona-img img6"></div>
+                <h3>Nome Quadro:</h3>
+                <p>Medidas:<br>Preço: </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <p>© 2025 Pincel&Parede — Todos os direitos reservados</p>
+    </footer>
+
+    <!--Efeito animação do scroll-->
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const elements = document.querySelectorAll(".fade-in-element, .fade-in-section");
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                }
+            });
+        }, {
+            threshold: 0.2  // 20% do elemento precisa aparecer
+        });
+
+        elements.forEach(el => observer.observe(el));
+    });
+    </script>
+
+</body>
+</html>
