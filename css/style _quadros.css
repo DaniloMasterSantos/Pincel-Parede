@@ -156,6 +156,22 @@ body {
     background: #22e222;
 }
 
+@media(width:500px){
+    .hero {
+        height: 50vh;
+        background-image: url(../img/tinta.jpg);
+        background-size:cover;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+        color: rgb(32, 30, 30);
+    }
+}
+
 /* ===========================
    GALERIA DE CARDS
 =========================== */
