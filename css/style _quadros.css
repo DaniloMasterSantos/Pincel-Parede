@@ -156,7 +156,7 @@ body {
     background: #22e222;
 }
 
-@media(width:500px){
+@media(max-width:500px){
     .hero {
         height: 50vh;
         background-image: url(../img/tinta.jpg);
@@ -430,6 +430,15 @@ body {
 
 .fade-in-section.visible {
     opacity: 1;
+}
+
+@media(max-width:500px){
+    .funciona-section h2 {
+        font-size: 52px;
+        margin-bottom: 60px;
+        color: #333;
+        padding-top: 50px;
+    }
 }
 
 
