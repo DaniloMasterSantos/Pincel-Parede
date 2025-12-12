@@ -38,7 +38,7 @@ body {
 }
 
 .logo span{
-    color:#4d6bff;
+    color:#e28822;
 }
 
 .menu {
@@ -55,7 +55,7 @@ body {
 }
 
 .menu a:hover {
-    color: #5b7fff;
+    color: #e28822;
 }
 
 /* Ícone do menu - escondido no desktop */
@@ -113,7 +113,7 @@ body {
 =========================== */
 .hero {
     height: 75vh;
-    background-image: url("../img/quadro.jpg");
+    background-image: url("../img/fundo.jpg");
     background-size:cover;
     align-items: center;
     justify-content: flex-start;
@@ -135,7 +135,7 @@ body {
 
 .btn {
     padding: 12px 25px;
-    background: #5b7fff;
+    background: #e28822;
     color: white;
     text-decoration: none;
     border-radius: 4px;
@@ -144,7 +144,7 @@ body {
 }
 
 .btn:hover {
-    background: #22e222;
+    background: #e25822;
 }
 
 /* ===========================
@@ -191,7 +191,7 @@ body {
 .card:hover {
     transform: translateY(-8px);
     box-shadow: 0 12px 26px rgba(0,0,0,0.18);
-    color: #22e222;
+    color: #e25822;
     
 }
 
@@ -211,7 +211,7 @@ body {
 }
 
 .card p {
-    color: #4d6bff;
+    color: #e28822;
     font-weight: bold;
     font-size: 15px;
 }
@@ -221,7 +221,7 @@ body {
    SOBRE A LOJA
 =========================== */
 .sobre-section {
-    background: rgba(0, 0, 0);
+    background: rgb(134, 85, 38);
     text-align: center;
     margin-top: 40px;
     min-height: 600px;
@@ -243,11 +243,11 @@ body {
 }
 
 .sobre-texto span{
-    color:#22e222;
+    color:#e28822;
 }
 
 .sobre-img{
-    background-image: url("../img/rabisco.jpeg");
+    background-image: url("../img/sobre.jpg");
     background-size: cover;
     width: 60%;
     min-height: 600px;
@@ -255,7 +255,7 @@ body {
 
 .sobre-section h2 {
     font-size: 52px;
-    color: #4d6bff;
+    color: #f0dddd;
     margin-bottom: -6vw;
 }
 
@@ -344,6 +344,7 @@ body {
 
 .funciona-card p{
     transition: 0.5s ease;
+    color: #e28822;;
 }
 
 .funciona-img{
@@ -354,7 +355,8 @@ body {
 }
 
 .img1{
-    background-image: url(../img/quadro2.jpg)
+    background-image: url(../img/quadro3.jpg);
+    background-position: center;
 }
 
 .img2{
@@ -362,7 +364,7 @@ body {
 }
 
 .img3{
-    background-image: url(../img/artesanato.jpg)
+    background-image: url(../img/artesanato2.jpg)
 }
 
 .img4{
@@ -370,7 +372,8 @@ body {
 }
 
 .img5{
-    background-image: url(../img/criativo.jpg)
+    background-image: url(../img/violao.jpg);
+    background-position: center;
 }
 
 .img6{
