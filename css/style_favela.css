@@ -1,0 +1,329 @@
+/* ===========================
+   RESET / BASE
+=========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+body {
+    background: #f2f4f8;
+    color: #333;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+.header {
+    width: 100%;
+    padding: 20px 40px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    transition: 0.8s;
+   
+}
+
+.logo span{
+    color:#e28822;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.menu a:hover {
+    color: #e28822;
+}
+
+/* Ícone do menu - escondido no desktop */
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* MENU MOBILE */
+@media (max-width: 768px) {
+
+    .hamburger {
+        display: block;
+        font-size: 28px;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    /* Remove o flex padrão do menu no mobile */
+    .menu {
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 20px;
+        margin: 0;
+    }
+
+    /* NAV vira caixa flutuante */
+    nav {
+        position: absolute;
+        top: 60px; /* ajustado para ficar grudado no header */
+        right: 20px;
+        width: 180px;
+        background: white;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+        border-radius: 10px;
+        display: none; /* escondido inicialmente */
+    }
+
+    /* Quando o menu abre */
+    .menu.active {
+        display: flex;
+    }
+
+    nav.active {
+        display: block;
+    }
+}
+
+
+/* ===========================
+   HERO
+=========================== */
+.hero-image{
+    width: 65%;
+    height: 90vh;
+    background-image: url(../img/favela.jpg);
+    background-size:cover;
+}
+
+.hero {
+    height: 90vh;
+    background-color: rgb(146, 81, 27);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: justify;
+        width: 35%;
+        height: 100%;
+}
+
+.hero-content h1 {
+    font-size: 4vw;
+    color: rgb(255, 255, 255);
+    margin-bottom: 8%;
+    text-align: center;
+}
+
+.hero-content p {
+    color: #fff9f9;
+    margin: 15px 0 25px;
+    padding-top: 7%;
+    padding: 17px;
+    line-height: 1.8;
+}
+
+.btn {
+    padding: 12px 25px;
+    background: #e28822;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #e25822;
+}
+
+a{
+    text-decoration: none;
+}
+
+@media(max-width:1024px){
+    .hero {
+        height: 90vh;
+        background-size: cover;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-image{
+        width:100%;
+        filter: brightness(40%);
+        position: relative;
+        z-index:1;
+        /*background-position: center;*/
+    }
+
+    .hero-content{
+        width: 100%;
+        position: absolute;
+        z-index:2;
+    }
+
+    .hero-content h1 {
+        font-size: 9vw;
+        color: rgb(255, 255, 255);
+        margin-bottom: 8%;
+    }
+
+    .hero-content p{
+        text-align: center;
+        color: #fff9f9;
+        margin: 15px 0 25px;
+        padding-top: 7%;
+        padding: 17px;
+        line-height: 1.8;
+        font-size: 18px;
+    }
+}
+
+/* ===========================
+  FOTOS
+=========================== */
+.fotos-section {
+    margin-top: 0%;
+    text-align: center;
+    min-height: 700px;
+    width:100%;
+    background-color:#f2f4f8;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.foto{
+    width: 23vw;
+    height: 90vh;
+    margin: 4% 3%;
+    background-position:top;
+}
+
+.foto1{
+    background-image: url(../img/favela.jpg);
+    background-size:cover;
+    background-position: center;
+}
+
+.foto2{
+    background-image: url(../img/quadros.jpg);
+    background-size:cover;
+    background-position: center;
+}
+
+
+
+@media(max-width:1024px){
+    .foto{
+        width: 80vw;
+        height: 70vh;
+        background-position:top;
+    }
+}
+
+
+/* Efeito de scroll*/
+
+/* Começa invisível */
+.fade-in-element {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1.2s ease, transform 1.2s ease;
+}
+
+/* Quando entra na tela */
+.fade-in-element.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* (Opcional) A section inteira também pode animar */
+.fade-in-section {
+    opacity: 0;
+    transition: opacity 1.2s ease;
+}
+
+.fade-in-section.visible {
+    opacity: 1;
+}
+
+@media(max-width:500px){
+    .funciona-section h2 {
+        font-size: 52px;
+        margin-bottom: 60px;
+        color: #333;
+        padding-top: 50px;
+    }
+}
+
+
+/* ===========================
+   FOOTER
+=========================== */
+.footer {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+/* ============================
+    ICONE WHATSAPP
+==============================*/
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: #242322;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    z-index: 999;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-float img {
+    width: 35px;
+    height: 35px;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+}
