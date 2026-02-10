@@ -41,6 +41,10 @@ body {
     color:#e28822;
 }
 
+.logo img{
+    width:110px;
+}
+
 .menu {
     list-style: none;
     display: flex;
